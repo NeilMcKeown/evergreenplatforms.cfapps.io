@@ -3,7 +3,7 @@ Bootstrap tweaks
 ===============================================================*/
 
 body, h1, h2, h3, h4 {
-    font-weight: 300;
+    /*font-weight: 300;*/
 }
 
 /* ==========================================================================
@@ -32,8 +32,8 @@ Generic styles
 /* other generic styles */
 
 .jh-card {
-    padding: 1.5%;
-    margin-top: 20px;
+    /*padding: 1.5%;
+    margin-top: 20px;*/
     border: none;
 }
 
@@ -231,3 +231,102 @@ Social Buttons
     color: #fff;
 }
 /* jhipster-needle-css-add-main JHipster will add new css style */
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+#myFooter {
+	background-color: #373a48;
+	color:white;
+}
+
+#myFooter .footer-copyright{
+	background-color: #383737;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#myFooter ul{
+	list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5{
+	font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a{
+	color:#d2d1d1;
+	text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+#myFooter .myCols{
+	text-align: center;
+}
+
+#myFooter .social-networks{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 38px;
+}
+
+#myFooter .social-networks a{
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover{
+	text-decoration: none;
+
+}
+
+#myFooter .facebook:hover{
+	color:#0077e2;
+}
+
+#myFooter .google:hover{
+	color:#ef1a1a;
+}
+
+#myFooter .twitter:hover{
+	color: #00aced;
+}
+
+@media screen and (max-width: 767px){
+	#myFooter {
+		text-align: center;
+	}
+}
+
+/* ==========================================================================
+Cover
+========================================================================== */
+.cover {
+    background: url('../images/leio-mclaren-299158.jpg') no-repeat bottom center fixed;
+    background-size: cover;
+    min-height: 700px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
