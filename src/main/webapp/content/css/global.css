@@ -323,7 +323,7 @@ Footer
 Cover
 ========================================================================== */
 .cover {
-    background: url('../images/katarzyna-kos-68212.jpg') no-repeat bottom center fixed;
+    background: url('../images/katarzyna-kos-68212.jpg') no-repeat top center fixed;
     background-size: cover;
     min-height: 700px;
     color: #fff;

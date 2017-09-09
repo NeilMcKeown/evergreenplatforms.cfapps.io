@@ -4,8 +4,12 @@
             <i class="fa fa-bars"></i>
         </a>
         <a class="navbar-brand logo float-left" routerLink="/" (click)="collapseNavbar()">
-            <span class="logo-img"></span>
-            <span jhiTranslate="global.title" class="navbar-title">Jhipster</span> <span class="navbar-version">{{version}}</span>
+            <span class="fa fa-lock fa-2x"></span>
+
+            <span jhiTranslate="global.title" class="navbar-title">
+                Evergreen Platforms Ltd.
+            </span>
+            <!--<span class="navbar-version">{{version}}</span>-->
         </a>
     </div>
     <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="isAuthenticated()">
