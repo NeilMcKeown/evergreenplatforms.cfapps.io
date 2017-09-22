@@ -24,3 +24,55 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
+.pricing {
+    color: white;
+    background-color: #222;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll; }
+@media (min-width: 1024px) {
+    .pricing {
+        background-attachment: fixed; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .pricing {
+        background-attachment: scroll; } }
+.pricing .pricing-item {
+    z-index: 1;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+    color: #222;
+    background: white;
+    -webkit-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
+    -moz-box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75);
+    box-shadow: 0 0 30px 5px rgba(34, 34, 34, 0.75); }
+.pricing .pricing-item h3 {
+    margin: 0; }
+.pricing .pricing-item hr {
+    max-width: 100px; }
+.pricing .pricing-item .price {
+    margin-bottom: 20px; }
+.pricing .pricing-item .price .number {
+    font-size: 50px;
+    font-weight: 900; }
+.pricing .pricing-item .price .number sup {
+    font-size: 30px; }
+.pricing .pricing-item .list-group-item {
+    border-radius: 0; }
+@media (min-width: 992px) {
+    .pricing .pricing-item {
+        margin-bottom: 0; }
+    .pricing .pricing-item.featured-first {
+        margin-top: 15px;
+        margin-right: -15px; }
+    .pricing .pricing-item.featured {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 45px 30px; }
+    .pricing .pricing-item.featured-last {
+        margin-top: 15px;
+        margin-left: -15px; } }
