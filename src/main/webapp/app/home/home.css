@@ -27,6 +27,7 @@ only screen and (                min-resolution: 2dppx) {
 .pricing {
     color: white;
     background-color: #222;
+    background: url("../../content/images/caspar-rubin-224229.jpg") no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -76,3 +77,24 @@ only screen and (                min-resolution: 2dppx) {
     .pricing .pricing-item.featured-last {
         margin-top: 15px;
         margin-left: -15px; } }
+
+
+.fa-check {color: green;}
+
+.jumbotron {
+    color: white;
+    background-color: #222;
+    background: url("../../content/images/martin-jernberg-297304.jpg") no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll; }
+@media (min-width: 1024px) {
+    .jumbotron {
+        background-attachment: fixed; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .jumbotron {
+        background-attachment: scroll; } }
+
+
