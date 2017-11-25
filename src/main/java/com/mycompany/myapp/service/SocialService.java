@@ -4,6 +4,7 @@ import com.mycompany.myapp.domain.Authority;
 import com.mycompany.myapp.domain.User;
 import com.mycompany.myapp.repository.AuthorityRepository;
 import com.mycompany.myapp.repository.UserRepository;
+import com.mycompany.myapp.security.AuthoritiesConstants;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -84,7 +85,7 @@ public class SocialService {
             throw new IllegalArgumentException("Email cannot be null with an existing login");
         }
         if (!StringUtils.isBlank(email)) {
-            Optional<User> user = userRepository.findOneByEmail(email);
+            Optional<User> user = userRepository.findOneByEmailIgnoreCase(email);
             if (user.isPresent()) {
                 log.info("User already exist associate the connection to this account");
                 return user.get();
@@ -94,7 +95,7 @@ public class SocialService {
         String login = getLoginDependingOnProviderId(userProfile, providerId);
         String encryptedPassword = passwordEncoder.encode(RandomStringUtils.random(10));
         Set<Authority> authorities = new HashSet<>(1);
-        authorities.add(authorityRepository.findOne("ROLE_USER"));
+        authorities.add(authorityRepository.findOne(AuthoritiesConstants.USER));
 
         User newUser = new User();
         newUser.setLogin(login);
