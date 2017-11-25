@@ -9,6 +9,7 @@ ext {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-devtools"
+    compile "com.h2database:h2"
 }
 
 def profiles = 'dev'
@@ -25,7 +26,7 @@ task webpackBuildDev(type: YarnTask) {
 }
 
 war {
-    webAppDirName = 'src/main/webapp/'
+    webAppDirName = 'build/www/'
 }
 
 processResources {
@@ -36,10 +37,10 @@ processResources {
     }
     filesMatching('**/application.yml') {
         filter {
-            it.replace('#spring.profiles.active#', profiles)
+            it.replace('#project.version#', version)
         }
         filter {
-            it.replace('#project.version#', version)
+            it.replace('#spring.profiles.active#', profiles)
         }
     }
 }
